@@ -21,27 +21,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <title>Anonymous</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Skill-Gen</title>
   </head>
   <body>
     <!-- header -->
-    <header>
-      <a href="#" class="logo">SKILL-<span>GEN</span></a>
-      <ul class="navlist">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#course">Course</a></li>
-        <li><a href="#comunity">Comunity</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <header data-aos="fade-down">
+      <div class="logo">
+        <img src="img/logo skillgen.png" alt="" />
+      </div>
+      <nav>
+        <ul class="navlist">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#course">Course</a></li>
+          <li><a href="#comunity">Comunity</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
       <div class="top-btnn">
         <a href="#" class="h-btn">Login/Register</a>
         <div class="bx bx-menu" id="menu-icon"></div>
       </div>
     </header>
-    <section class="title">
+    <section class="title" id="home" data-aos="fade-in">
       <div class="judul">
         <h1>EMPOWER <span>MUSLIM</span> TALENTS</h1>
         <p>Skillful Community Through Sadaqah Exchange</p>
@@ -51,7 +55,7 @@
       </div>
     </section>
 
-    <div class="about" id="about">
+    <div class="about" id="about" data-aos="fade-in">
       <h2>ABOUT</h2>
       <h1>
         For diverse skill-sharing, from teaching to IT, in the spirit of
@@ -61,52 +65,137 @@
     </div>
 
     <!-- <hr/> -->
-    <section class="course" id="course">
-      <div class="text">
-        <h2>Find <span>Course</span></h2>
+    <div class="text">
+      <h2>Find <span>Course</span></h2>
+    </div>
+    <section class="course" id="course" data-aos="fade-in">
+      <div class="row">
+        <img src="img/programing.gif" alt="programing" />
+        <div class="main-row">
+          <div class="row-text">
+            <div class="row-icon">
+              <i class="bx bx-chevrons-right"></i>
+            </div>
+          </div>
+          <h4>Programing</h4>
+        </div>
       </div>
 
-      <div class="course-content">
-        <div class="row">
-          <img src="img/programing.gif" alt="programing" />
-          <div class="main-row">
-            <div class="row-text">
-              <div class="row-icon">
-                <i class="bx bx-chevrons-right"></i>
-              </div>
+      <div class="row">
+        <img src="img/dataanalyst.gif" alt="portfolio1" />
+        <div class="main-row">
+          <div class="row-text">
+            <div class="row-icon">
+              <i class="bx bx-chevrons-right"></i>
             </div>
-            <h4>Programing</h4>
           </div>
+          <h4>Data Analyst</h4>
         </div>
+      </div>
 
-        <div class="row">
-          <img src="img/dataanalyst.gif" alt="portfolio1" />
-          <div class="main-row">
-            <div class="row-text">
-              <div class="row-icon">
-                <i class="bx bx-chevrons-right"></i>
-              </div>
+      <div class="row">
+        <img src="img/Digital marketing.gif" alt="portfolio1" />
+        <div class="main-row">
+          <div class="row-text">
+            <div class="row-icon">
+              <i class="bx bx-chevrons-right"></i>
             </div>
-            <h4>Data Analyst</h4>
           </div>
+          <h4>Digital Marketing</h4>
         </div>
+      </div>
 
-        <div class="row">
-          <img src="img/Digital marketing.gif" alt="portfolio1" />
-          <div class="main-row">
-            <div class="row-text">
-              <div class="row-icon">
-                <i class="bx bx-chevrons-right"></i>
-              </div>
-            </div>
-            <h4>Digital Marketing</h4>
-          </div>
+      <div class="next">
+        <i class="bx bxs-right-arrow-circle"></i>
+      </div>
+    </section>
+
+    <div class="title-com">
+      <h2>Over <span>1000+</span> people trust us</h2>
+    </div>
+
+    <section class="comunity" id="comunity" data-aos="fade-down">
+      <div class="img-com1">
+        <div class="text-com">
+          <h5>Jackson Mitchell</h5>
+          <p>Data Analyst</p>
         </div>
-        <div class="next">
-          <!-- <div class="row-icon"> -->
-          <i class="bx bxs-right-arrow-circle"></i>
+      </div>
+      <div class="img-com2">
+        <div class="text-com">
+          <h5>Liam Martinez</h5>
+          <p>Digital Marketing</p>
+        </div>
+      </div>
+      <div class="img-com3">
+        <div class="text-com">
+          <h5>Alex Johnson</h5>
+          <p>Software Engginer</p>
         </div>
       </div>
     </section>
+    <div class="button-com">
+      <a href="#about">View More <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+    <footer class="contact" id="contact" data-aos="fade-in">
+      <div class="gruop-foot">
+        <div class="logo-footer">
+          <img src="img/logo skillgen.png" alt="" />
+        </div>
+        <div class="icon">
+          <a href="#">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="">
+            <i class="ri-youtube-fill"></i>
+          </a>
+          <a href="#">
+            <i class="ri-twitter-x-line"></i>
+          </a>
+          <a href="">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class="link">
+        <ul>
+          <li><p>Quick Link</p></li>
+          <li>
+            <a href="#"><i class="ri-arrow-right-s-line"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-arrow-right-s-line"></i>About</a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-arrow-right-s-line"></i>Course</a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-arrow-right-s-line"></i>Comunity</a>
+          </li>
+        </ul>
+      </div>
+      <div class="link-contact">
+        <ul>
+          <li><p>Contact</p></li>
+          <li>
+            <a href="#"><i class="ri-map-pin-fill"></i>Jl.Ginanjar No.3 Bugi</a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-mail-fill"></i>SkillGen@gmail.com</a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-phone-fill"></i>+62-897-7013</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1100,
+      });
+    </script>
   </body>
 </html>

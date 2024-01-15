@@ -15,22 +15,7 @@
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
-  /* background: linear-gradient(-90deg, #1d1e20, #08352e);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  } */
+  width: fit-content;
 }
 header {
   position: fixed;
@@ -42,31 +27,30 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 7%;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
-.logo {
-  font-size: 25px;
-  color: var(--text-color);
-  font-weight: 700;
-  transition: all 0.5s ease;
+.logo img {
+  width: 60px;
+  justify-self: center;
 }
-
 span {
   color: var(--main-color);
 }
-.logo:hover {
-  transform: scale(1);
-  color: var(--bg-color);
-}
 .navlist {
   display: flex;
+  list-style: none;
+  gap: 10px;
 }
 .navlist a {
+  text-decoration: none;
   font-size: 12px;
   font-weight: 500;
   color: var(--text-color);
   margin-left: 30px;
   margin-right: 0px;
+  transition: all 0.5s ease;
+  padding: 8px 16px;
+  border-radius: 5px;
   transition: all 0.5s ease;
 }
 
@@ -76,15 +60,27 @@ span {
   transform: scale(1.1);
 }
 
+header.stiky {
+  background: var(--bg-color);
+  box-shadow: 0 0.1rem 1rem rgba(0, 255, 145, 0.2);
+}
+.top-btnn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 #menu-icon {
   font-size: 35px;
   z-index: 10001;
   cursor: pointer;
   display: none;
 }
+
 .h-btn {
   display: inline-block;
-  padding: 11px 26px;
+  padding: 10px 18px;
   background: transparent;
   color: var(--main-color);
   border: 2px solid var(--main-color);
@@ -105,11 +101,12 @@ span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 15% 40%;
+  padding: 10% 40%;
 }
 .judul {
   width: 900px;
   font-size: 50px;
+  padding: 60px 0;
 }
 
 .judul h1 {
@@ -129,16 +126,18 @@ span {
 .button1 {
   margin-top: 50px;
   display: inline-block;
-  padding: 11px 26px;
+  padding: 11px 20px;
   justify-content: center;
   align-items: center;
   background-color: var(--main-color);
-  color: var(--text-color);
   border: 2px solid var(--main-color);
   border-radius: 8px;
   font-size: 15px;
   font-weight: 700;
   transition: all 0.5s ease;
+}
+.button1 a {
+  color: #1d1e20;
 }
 .button1:hover {
   transform: scale(1.1);
@@ -156,18 +155,18 @@ span {
   color: var(--main-color);
   text-align: center;
   padding-top: 70px;
-  font-size: 45px;
+  font-size: 35px;
 }
 .about h1 {
   font-size: 65px;
   font-weight: 700;
   text-align: center;
-  padding-top: 75px;
+  padding-top: 40px;
 }
 .about button {
-  margin-top: 50px;
+  margin-top: 20px;
   display: inline-block;
-  padding: 11px 26px;
+  padding: 11px 20px;
   justify-content: center;
   align-items: center;
   background-color: var(--main-color);
@@ -181,21 +180,25 @@ span {
 .about button:hover {
   transform: scale(1.1);
 }
-
-.course-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  align-items: center;
-  margin: 0 7%;
-  gap: 1.5rem;
-  margin-top: 4.2rem;
+.about a {
+  color: #1d1e20;
 }
 .text {
-  padding-top: 40px;
+  margin-top: 80px;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 5%;
+}
+.course-content {
+  display: flex;
 }
 
 .row img {
@@ -211,6 +214,7 @@ span {
   box-shadow: 0 0 5px var(--main-color);
   padding: 20px;
   transition: all 0.5s ease;
+  width: 400px;
 }
 
 .main-row {
@@ -248,14 +252,11 @@ span {
   border-radius: 100px;
   border: 1px solid transparent;
   box-shadow: 0 0 10px var(--main-color);
-  padding: 3px;
   transition: all 0.5s ease;
   font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 28%;
 }
 .next i {
   color: var(--main-color);
@@ -264,4 +265,379 @@ span {
 .next :hover {
   transform: translateY(-5px) scale(1.03);
   cursor: pointer;
+}
+.title-com {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comunity {
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.img-com1 {
+  display: flex;
+  align-items: flex-end;
+  background-color: #a7b9c1;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  background-image: url(img/Alex.jpg);
+  background-size: cover;
+}
+.img-com2 {
+  display: flex;
+  align-items: flex-end;
+  background-color: #a7b9c1;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  background-image: url(img/Liam.jpg);
+  background-size: cover;
+  /* background-color: #1d1e20; */
+}
+.img-com3 {
+  display: flex;
+  align-items: flex-end;
+  background-color: #a7b9c1;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  background-image: url(img/Jackson.jpg);
+  background-size: cover;
+}
+.img-com p {
+  /* font-weight: 400; */
+  font-size: 1rem;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.text-com {
+  display: inline-block;
+  padding: 8%;
+}
+.button-com {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 20px;
+}
+.button-com a {
+  color: var(--text-color);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  padding: 10px 15px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  font-size: 15px;
+  font-weight: 700;
+}
+.button-com a:hover {
+  transform: scale(1.1);
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+  padding: 0% 18%;
+}
+.gruop-foot {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+}
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 30px;
+}
+.logo-footer img {
+  width: 100px;
+  max-width: 100px;
+  padding-bottom: 30px;
+}
+.icon {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.icon a {
+  color: var(--main-color);
+  border-radius: 100%;
+  backdrop-filter: brigthness(0%);
+  font-size: calc(10pw + 1vw);
+  box-shadow: 0 0 30px transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.icon i {
+  font-size: 18px;
+}
+.icon a:hover {
+  transform: scale(1.1);
+  color: var(--text-color);
+}
+.link {
+  display: inline-block;
+}
+.link ul {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link li {
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 8px;
+  margin-bottom: calc(5px + 1vw);
+}
+.link a {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.link i {
+  color: var(--main-color);
+}
+.link a:hover {
+  color: var(--main-color);
+}
+.link-contact {
+  display: inline-block;
+}
+.link-contact ul {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-contact li {
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 8px;
+  margin-bottom: calc(5px + 1vw);
+}
+.link-contact a {
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+.link-contact a:hover {
+  color: var(--main-color);
+}
+.link-contact i {
+  color: var(--main-color);
+  padding-right: 8px;
+  font-size: 16px;
+}
+
+/* responsive */
+@media (max-width: 1025px) {
+  .navlist a {
+    margin-left: 5px;
+  }
+  header {
+    padding: 20px 10%;
+  }
+  .about {
+    height: auto;
+  }
+  .judul h1 {
+    font-size: 60px;
+  }
+  .judul {
+    padding: 30% 0;
+  }
+  .about button {
+    margin: 5% 0;
+  }
+}
+@media (max-width: 961px) {
+  header {
+    padding: 15px 6%;
+  }
+  .navlist {
+    gap: 2px;
+  }
+  .navlist a {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    padding: 10px 5%;
+  }
+  .title {
+    padding: 5% 0;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .navlist a {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .judul {
+    padding: 2% 0;
+  }
+  .judul {
+    width: 500px;
+    font-size: 35px;
+  }
+  .judul h1 {
+    font-size: 45px;
+    padding: 15% 0;
+  }
+  .judul p {
+    font-size: 14px;
+    padding-top: 0%;
+  }
+  .button1 {
+    margin-top: 10px;
+  }
+  .about h2 {
+    font-size: 30px;
+  }
+  .about h1 {
+    font-size: 45px;
+  }
+  .course {
+    flex-wrap: wrap;
+  }
+  .course-content {
+    width: 45%;
+  }
+  .row {
+    width: 45%;
+  }
+  .main-row {
+    flex-wrap: wrap;
+  }
+  .next {
+    font-size: 40px;
+  }
+  .comunity {
+    flex-wrap: wrap;
+  }
+  .img-com {
+    width: 30%;
+  }
+  .text-com {
+    width: 70%;
+  }
+  footer {
+    flex-direction: column;
+    padding: 0 10%;
+  }
+  .gruop-foot {
+    width: 100%;
+    margin: auto;
+  }
+  .icon {
+    flex-direction: flex;
+  }
+  .link {
+    padding: 20px;
+  }
+  .link ul {
+    padding: 20px;
+  }
+  .link li {
+    padding-bottom: 5px;
+  }
+  .link-contact {
+    padding: 20px;
+  }
+  .link-contact ul {
+    padding: 20px;
+  }
+  .link-contact li {
+    padding-bottom: 5px;
+  }
+  .navlist {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .top-btnn a {
+    font-size: 12px;
+  }
+  .navlist {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 30px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1e20;
+    transition: all 0.5 ease-in-out;
+  }
+  .navlist a {
+    display: block;
+    padding: 0;
+    margin: 0px 0px 24px 20px;
+    font-size: 1rem;
+  }
+  .navlist a:hover {
+    color: var(--main-color);
+    text-shadow: 5px 0px 50px var(--main-color), 0px 0px 20px var(--text-color);
+    transform: scale();
+  }
+  .navlist.open {
+    left: 0;
+    transition: all 0.5 ease-in-out;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 12px;
+  }
+  .judul h1 {
+    font-size: 35px;
+    padding-bottom: 5%;
+  }
+  .button1 {
+    margin-top: 4%;
+  }
+  .about h2 {
+    padding: 5%;
+    font-size: 23px;
+  }
+  .about h1 {
+    padding: 2px;
+    font-size: 30px;
+  }
+  button {
+    padding: 10px;
+  }
+  .text h2 {
+    font-size: 28px;
+  }
+  .course {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    width: 100%;
+  }
 }
